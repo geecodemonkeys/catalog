@@ -66,5 +66,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'react-rails', github: 'reactjs/react-rails'
+gem 'react-bootstrap-rails'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 
 
