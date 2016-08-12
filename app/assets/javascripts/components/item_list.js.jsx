@@ -22,6 +22,7 @@ var ItemList = React.createClass({
   componentWillUnmount: function() {
     this.serverRequest.abort();
   },
+
   render: function() {
     return (
     	<ReactBootstrap.Grid>
