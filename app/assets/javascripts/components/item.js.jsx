@@ -11,18 +11,11 @@ var Item = React.createClass({
 
   render: function() {
     return (
-          <ReactBootstrap.Grid>
-            <ReactBootstrap.Row>
-              <ReactBootstrap.Col xs={6} md={4}>
-                <ReactBootstrap.Thumbnail src={ this.props.image } alt="242x200">
-                  <h3>{this.props.title}</h3>
-                  <p>{this.props.description}</p>
-                  <p>{this.props.image}</p>
-                   <ReactBootstrap.Button bsStyle="danger">Danger</ReactBootstrap.Button>
-                </ReactBootstrap.Thumbnail>
-              </ReactBootstrap.Col>
-        </ReactBootstrap.Row>
-      </ReactBootstrap.Grid>
+      <ReactBootstrap.Thumbnail src={ this.props.image } alt="242x200">
+        <h3>{this.props.title}</h3>
+        <p dangerouslySetInnerHTML={{__html: this.props.description}} />
+        <ReactBootstrap.Button bsStyle="primary">Open</ReactBootstrap.Button>
+      </ReactBootstrap.Thumbnail>
     );
   }
 });

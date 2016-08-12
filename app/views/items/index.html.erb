@@ -1,8 +1,5 @@
 
-<% @items.each do |item| %>
-  <%= react_component('Item', {title: item.title, description: item.description, id: item.id, image: item.image, price: item.price.to_f}) %>
-<% end %>
-
+<%= react_component('ItemList', {source: 'items.json'}) %>
 <br>
 
 <%= link_to 'New Item', new_item_path %>
